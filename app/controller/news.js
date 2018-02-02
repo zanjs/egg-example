@@ -10,6 +10,11 @@ class NewsController extends Controller {
         { id: 2, title: 'this is news 2', url: '/news/2' },
       ],
     };
+    // const { ctx, app } = this;
+    // const pageSize = app.config.news.pageSize;
+    // const page = ctx.query.page || 1;
+    // const newsList = await ctx.service.news.list(page);
+    // await this.ctx.render('news/list.tpl', { list: newsList, page, pageSize });
     await this.ctx.render('news/list.tpl', dataList);
   }
 }

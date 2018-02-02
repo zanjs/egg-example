@@ -9,6 +9,11 @@ module.exports = appInfo => {
   // add your config here
   config.middleware = [];
 
+  config.news = {
+    pageSize: 30,
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
+  };
+
   config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {
